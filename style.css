@@ -1,0 +1,39 @@
+body {
+    padding: 0;
+    margin: 0 auto;
+}
+
+form input {
+    width: 100%;
+    margin-bottom: 12px;
+}
+  
+.container {
+    margin: 5% auto;
+    width: 200px;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.error {
+    width: 100%;
+    padding: 0;
+    display: none;
+    font-size: 80%;
+    color: white;
+    background-color: #900;
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.error.active { 
+    display: block;
+    padding: 3px;
+}
+
+input:invalid {
+    border: 2px solid red;
+}

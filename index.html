@@ -8,6 +8,22 @@
     <script src="validate.js" defer></script>
 </head>
 <body>
-
+    <div class="container">
+        <h1>Form Validation</h1>
+        <form id="validForm">
+            <label for="email">Email:</label>
+            <input type="email" id="email" required minlength="8">
+            <label for="country">Country:</label>
+            <input type="text" id="country" required>
+            <label for="zipcode">ZIP:</label>
+            <input type="text" id="zipcode" required minlength="5">
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            <label for="passwordConfirm">Confirm Password:</label>
+            <input type="password" id="passwordConfirm" required>
+            <button type="submit">Submit</button>
+            <p class="error" id="error" aria-live="polite">test</p>
+          </form>
+    </div>
 </body>
 </html>
